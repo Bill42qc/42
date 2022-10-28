@@ -6,7 +6,7 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 12:36:50 by bmartin           #+#    #+#             */
-/*   Updated: 2022/10/21 11:33:42 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/10/28 11:01:21 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ The	strlcpy(void) function copies up to size
 
 */
 
-#include "libft.h"
+#include "../libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

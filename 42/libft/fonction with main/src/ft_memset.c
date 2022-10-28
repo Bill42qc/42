@@ -6,11 +6,11 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 13:52:52 by bmartin           #+#    #+#             */
-/*   Updated: 2022/10/21 09:49:51 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/10/28 11:01:21 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 //memset rempli les n premiers octets de la zone memoire pointer
 //par b avec loctet c

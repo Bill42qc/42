@@ -6,7 +6,7 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 18:23:21 by bmartin           #+#    #+#             */
-/*   Updated: 2022/10/25 14:40:25 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/10/28 11:01:20 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ Cette nouvelle chaîne commence à l’index ’start’ et
 a pour taille maximale ’len’.
 */
 
-#include "libft.h"
+#include "../libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

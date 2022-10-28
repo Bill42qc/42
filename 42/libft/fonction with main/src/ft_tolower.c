@@ -6,7 +6,7 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 15:11:02 by bmartin           #+#    #+#             */
-/*   Updated: 2022/10/21 09:50:06 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/10/28 11:01:20 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ RETURN VALUES
 	the tolower() function returns the corresponding lower-case letter if there
      is one; otherwise, the argument is returned unchanged.
 		*/
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_tolower(int c)
 {

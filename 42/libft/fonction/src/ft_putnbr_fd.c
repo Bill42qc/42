@@ -6,11 +6,11 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/26 09:29:02 by bmartin           #+#    #+#             */
-/*   Updated: 2022/10/26 10:41:54 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/10/28 11:01:20 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

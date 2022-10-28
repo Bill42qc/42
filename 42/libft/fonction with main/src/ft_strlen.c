@@ -6,13 +6,13 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 11:49:49 by bmartin           #+#    #+#             */
-/*   Updated: 2022/10/21 09:50:00 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/10/28 11:01:21 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //strlen renvoi un int = a la longueur du str
 
-#include "libft.h"
+#include "../libft.h"
 size_t	ft_strlen(const char *str)
 {
 	size_t	i;

@@ -6,26 +6,24 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 15:17:42 by bmartin           #+#    #+#             */
-/*   Updated: 2022/10/27 14:03:47 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/10/28 11:01:20 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-char	*ft_strrchr(const char *s, int c)
-{
-	char	*ret;
-	int		i;
+char	*ft_strrchr(const char *s, int c) {
+  char *ret;
+  int i;
 
-	ret = 0;
-	i = 0;
-	while (s[i])
-	{
-		if (s[i] == (char)c)
-			ret = &((char *)s)[i];
-		i++;
-	}
-	if (s[i] == (char)c)
-		ret = &((char *)s)[i];
-	return (ret);
+  ret = 0;
+  i = 0;
+  while (s[i]) {
+    if (s[i] == (char)c)
+      ret = &((char *)s)[i];
+    i++;
+  }
+  if (s[i] == (char)c)
+    ret = &((char *)s)[i];
+  return (ret);
 }

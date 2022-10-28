@@ -6,7 +6,7 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 09:54:18 by bmartin           #+#    #+#             */
-/*   Updated: 2022/10/21 09:49:48 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/10/28 11:01:21 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ overlap: copying takes place as though the bytes in src are first copied into a 
 	and the bytes are then copied from the temporary array to dest.
 		*/
 
-#include "libft.h"
+#include "../libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

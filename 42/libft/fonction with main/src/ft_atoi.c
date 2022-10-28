@@ -6,7 +6,7 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 12:06:33 by bmartin           #+#    #+#             */
-/*   Updated: 2022/10/24 10:31:29 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/10/28 11:01:21 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@
 // 	-
 // 	tion.
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_atoi(const char *str)
 {

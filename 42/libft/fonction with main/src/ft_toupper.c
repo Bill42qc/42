@@ -6,7 +6,7 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 14:18:58 by bmartin           #+#    #+#             */
-/*   Updated: 2022/10/21 09:50:09 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/10/28 11:01:20 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ RETURN VALUES
      is one; otherwise, the argument is returned unchanged.
 		*/
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_toupper(int c)
 {
