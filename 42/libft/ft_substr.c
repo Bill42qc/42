@@ -6,29 +6,9 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 18:23:21 by bmartin           #+#    #+#             */
-/*   Updated: 2022/11/02 14:51:43 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/11/03 11:00:54 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-/*
-Function name ft_substr
-Prototype char *ft_substr(char const *s, unsigned int start,
-size_t len);
-Fichiers de rendu -
-Paramètres s: La chaîne de laquelle extraire la nouvelle
-chaîne.
-start: L’index de début de la nouvelle chaîne dans
-la chaîne ’s’.
-len: La taille maximale de la nouvelle chaîne.
-Valeur de retour La nouvelle chaîne de caractères.
-NULL si l’allocation échoue.
-Fonctions externes autorisées
-malloc
-Description Alloue (avec malloc(3)) et retourne une chaîne de
-caractères issue de la chaîne ’s’.
-Cette nouvelle chaîne commence à l’index ’start’ et
-a pour taille maximale ’len’.
-*/
 
 #include "libft.h"
 

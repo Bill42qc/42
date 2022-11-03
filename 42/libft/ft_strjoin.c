@@ -6,7 +6,7 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 09:39:24 by bmartin           #+#    #+#             */
-/*   Updated: 2022/11/02 14:51:43 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/11/03 11:00:28 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,17 +39,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	res[i] = '\0';
 	return (res);
 }
-
-/*
-int	main(void)
-{
-	char	s1[];
-	char	s2[];
-
-	s1[] = "patate";
-	s2[] = "steak";
-	printf("s1 = %s \n", s1);
-	printf("s2 = %s \n", s2);
-	printf("%s", (ft_strjoin(s1, s2)));
-}
-*/

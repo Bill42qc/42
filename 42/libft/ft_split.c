@@ -6,27 +6,28 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 09:24:15 by bmartin           #+#    #+#             */
-/*   Updated: 2022/11/02 15:07:19 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/11/03 13:11:42 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// static void	*release(char **tab)
-// {
-// 	int	i;
+static void	*release(char **tab)
+{
+	int	i;
 
-// 	i = 0;
-// 	while (tab[i])
-// 	{
-// 		free(tab[i]);
-// 		i++;
-// 	}
-// 	free(tab);
-// 	return (NULL);
-// }
+	i = 0;
+	while (tab[i])
+	{
+		free(tab[i]);
+		i++;
+	}
+	free(tab);
+	return (NULL);
+}
 
 //fonction pour compter le nombre de mot selon un separateur (c)
+
 static int	count_words(const char *str, char c)
 {
 	int	i;
@@ -49,49 +50,39 @@ static int	count_words(const char *str, char c)
 }
 // on malloc et retourne mot par mot
 
-static char	*word_return(const char *str, int start, int finish)
+static size_t	word_len(char const *s, char c)
 {
-	char	*word;
-	int		i;
+	int	i;
 
 	i = 0;
-	word = malloc((finish - start + 1) * sizeof(char));
-	while (start < finish)
-	{
-		word[i] = str[start];
+	while (s[i] != c && s[i])
 		i++;
-		start++;
-	}
-	word[i] = '\0';
-	return (word);
+	return (i);
 }
-
-//time to split baby
 
 char	**ft_split(char const *s, char c)
 {
-	size_t	i;
-	size_t	j;
-	int		index;
 	char	**split;
+	int		wrd_num;
+	int		i;
+	size_t	len;
 
-	split = malloc((count_words(s, c) + 1) * sizeof(char *));
-	if (!s || !(split))
-		return (0);
+	split = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
+	if (!s || !split)
+		return (NULL);
 	i = 0;
-	j = 0;
-	index = -1;
-	while (i <= ft_strlen(s))
+	wrd_num = -1;
+	len = 0;
+	while (++wrd_num < count_words(s, c))
 	{
-		if (s[i] != c && index < 0)
-			index = i;
-		else if ((s[i] == c || i == ft_strlen(s)) && index >= 0)
-		{
-			split[j++] = word_return(s, index, i);
-			index = -1;
-		}
-		i++;
+		while (s[i] == c && s[i])
+			i++;
+		len = word_len(&s[i], c);
+		split[wrd_num] = ft_substr(&s[i], 0, len);
+		if (split[wrd_num] == NULL)
+			return (release(split));
+		i += len;
 	}
-	split[j] = 0;
+	split[wrd_num] = NULL;
 	return (split);
 }
