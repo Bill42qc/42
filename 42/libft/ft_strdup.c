@@ -6,7 +6,7 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 11:30:13 by bmartin           #+#    #+#             */
-/*   Updated: 2022/11/02 14:51:43 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/11/03 18:25:26 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strdup(const char *s1)
 	int		s1_len;
 	int		i;
 
+	if (!s1)
+		return (NULL);
 	s1_len = 0;
 	while (s1[s1_len])
 		s1_len++;

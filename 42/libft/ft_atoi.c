@@ -6,7 +6,7 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 12:06:33 by bmartin           #+#    #+#             */
-/*   Updated: 2022/11/02 14:50:01 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/11/03 18:14:35 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int	ft_atoi(const char *str)
 	result = 0;
 	sign = 1;
 	i = 0;
+	if (!str)
+		return (0);
 	while (str[i] && (str[i] == '\f' || str[i] == '\t' || str[i] == ' '
 			|| str[i] == '\n' || str[i] == '\r' || str[i] == '\v'))
 		i++;

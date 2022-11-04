@@ -6,7 +6,7 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 10:53:14 by bmartin           #+#    #+#             */
-/*   Updated: 2022/11/02 14:51:43 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/11/03 18:33:24 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	i;
 	size_t	j;
 
+	if (!haystack)
+		return (NULL);
 	i = 0;
 	if (*needle == '\0' || needle == NULL)
 		return ((char *)haystack);

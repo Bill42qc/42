@@ -6,7 +6,7 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 18:23:21 by bmartin           #+#    #+#             */
-/*   Updated: 2022/11/03 11:00:54 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/11/03 16:18:01 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	i = 0;
 	j = 0;
+	if (!s)
+		return (NULL);
 	if (start < ft_strlen(s))
 		while (s[i + start] && len > i)
 			i++;
