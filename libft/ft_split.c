@@ -6,7 +6,7 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 09:24:15 by bmartin           #+#    #+#             */
-/*   Updated: 2022/11/03 13:11:42 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/11/04 01:58:11 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,8 +67,10 @@ char	**ft_split(char const *s, char c)
 	int		i;
 	size_t	len;
 
+	if (!s)
+		return (NULL);
 	split = (char **)malloc(sizeof(char *) * (count_words(s, c) + 1));
-	if (!s || !split)
+	if (!split)
 		return (NULL);
 	i = 0;
 	wrd_num = -1;
