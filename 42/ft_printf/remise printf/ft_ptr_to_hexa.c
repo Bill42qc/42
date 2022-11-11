@@ -6,7 +6,7 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 15:01:50 by bmartin           #+#    #+#             */
-/*   Updated: 2022/11/10 20:13:19 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/11/10 20:45:05 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@ int	ft_ptr_to_hexa(size_t n)
 	int	len;
 
 	ft_printstr("0x");
-	//on commence len=2 car on write le 0x au debut
 	len = 2;
 	len += ft_hexa_print((unsigned long)n);
 	return ((len));

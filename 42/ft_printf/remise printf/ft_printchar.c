@@ -6,14 +6,14 @@
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 10:42:14 by bmartin           #+#    #+#             */
-/*   Updated: 2022/11/08 11:16:51 by bmartin          ###   ########.fr       */
+/*   Updated: 2022/11/10 20:42:49 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_printchar (int c)
+int	ft_printchar(int c)
 {
-	write(1, &c ,1);
+	write(1, &c, 1);
 	return (1);
 }
