@@ -1,19 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printchar.c                                     :+:      :+:    :+:   */
+/*   main2.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bmartin <bmartin@student.42quebec.com>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/08 10:42:14 by bmartin           #+#    #+#             */
-/*   Updated: 2022/11/11 09:14:04 by bmartin          ###   ########.fr       */
+/*   Created: 2022/11/16 10:31:10 by bmartin           #+#    #+#             */
+/*   Updated: 2022/11/17 18:22:34 by bmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "get_next_line.h"
 
-int	ft_printchar(int c)
+int	main(void)
 {
-	write(1, &c, 1);
-	return (1);
+	int	fd;
+	int	i;
+
+	i = 1;
+	fd = open("text.txt", O_RDONLY);
+	while (i > 0)
+	{
+		printf("%s", get_next_line(fd));
+		i--;
+	}
 }
