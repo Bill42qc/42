@@ -1,0 +1,5 @@
+-FLOODFILL
+-CHECK FILE name end with .ber
+-make free function to free data
+-check leaks
+-Check norminette
